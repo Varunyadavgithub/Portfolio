@@ -97,7 +97,10 @@
   .btn-container {
     flex-wrap: wrap;
   }
-  #contact,
+  .contact-info-lower-container{
+    height: 50vh;
+    width: 90%;
+  }
   footer {
     height: 50vh;
   }

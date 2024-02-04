@@ -133,6 +133,7 @@ a:hover {
 /******************** Hero Section ********************/
 /* Profile section */
 #profile {
+  position: relative;
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -364,10 +365,6 @@ article .icon{
   width: 90%;
   height: 90%;
 }
-.project-img:hover{
-  transform: scale(1.1);
-  border: 2px solid black;
-}
 .project-title {
   margin: 1rem;
   color: black;
@@ -382,7 +379,8 @@ article .icon{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 70vh;
+  height: 100vh;
+  margin-top: 2rem;
 }
 .contact-info-upper-container {
   display: flex;
@@ -414,6 +412,53 @@ article .icon{
 }
 .email-icon {
   height: 2.5rem;
+}
+
+.contact-info-lower-container{
+  height: 50vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  border:  0.1rem solid rgb(163, 163, 163);
+  border-radius: 2rem;
+  background: #EFEFEF;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+.contact-inputs{
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem;
+}
+.contact-form textarea{
+  height: 10rem;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+
+}
+.contact-form button{
+  width: 8rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: rgb(12, 147, 201);
+
+}
+.contact-form button:hover{
+  color: white;
+  background-color: rgb(11, 156, 11);
 }
 /********************* Footer section ********************/
 footer {
