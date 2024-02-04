@@ -445,7 +445,7 @@ article .icon{
   padding: 1rem;
   border: none;
   border-radius: 1rem;
-
+  resize: none;
 }
 .contact-form button{
   width: 8rem;
