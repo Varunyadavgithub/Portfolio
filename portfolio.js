@@ -10,9 +10,6 @@ function toggleMenu(){
 const text=document.querySelector(".sec-text");
 const textload = ()=>{
     setTimeout( ()=>{
-        text.innerHTML="Learner...";
-    }, 0)
-    setTimeout( ()=>{
         text.innerHTML="Programer";
     }, 4000)
     setTimeout( ()=>{
