@@ -17,13 +17,13 @@ const textload = ()=>{
     }, 4000)
     setTimeout( ()=>{
         text.innerHTML="MERN Stack Developer"
-    }, 0)
+    }, 8000)
     setTimeout( ()=>{
         text.innerHTML="Problem Solver";
-    }, 8000)
+    }, 12000)
     setTimeout( ()=>{
         text.innerHTML="HardCore DSA Lover";
-    }, 8000)
+    }, 16000)
 }
 textload();
 setInterval(textload,12000);
