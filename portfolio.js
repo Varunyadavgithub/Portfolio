@@ -16,14 +16,14 @@ const textload = ()=>{
         text.innerHTML="Programer";
     }, 4000)
     setTimeout( ()=>{
+        text.innerHTML="MERN Stack Developer"
+    }, 0)
+    setTimeout( ()=>{
         text.innerHTML="Problem Solver";
     }, 8000)
     setTimeout( ()=>{
         text.innerHTML="HardCore DSA Lover";
     }, 8000)
-    setTimeout( ()=>{
-        text.innerHTML="MERN Stack Developer";
-    }, 12000)
 }
 textload();
 setInterval(textload,12000);
