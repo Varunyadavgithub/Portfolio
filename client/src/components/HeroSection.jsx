@@ -103,14 +103,16 @@ const HeroSection = () => {
             variants={itemVariants}
             className="flex justify-center order-1 md:order-2 mb-8 md:mb-0"
           >
-            <motion.img
-              src={assets.Profile}
-              alt="Varun Yadav"
-              className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.7 }}
-            />
+            <div className="p-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full">
+              <motion.img
+                src={assets.Profile}
+                alt="Varun Yadav"
+                className="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 object-cover rounded-full shadow-lg"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.7 }}
+              />
+            </div>
           </motion.div>
         </motion.div>
 

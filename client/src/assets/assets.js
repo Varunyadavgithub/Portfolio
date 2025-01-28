@@ -28,6 +28,7 @@ import {
   SiCplusplus,
   SiPostman,
 } from "react-icons/si";
+
 import { VscVscode } from "react-icons/vsc";
 
 export const assets = { Profile };
@@ -52,6 +53,8 @@ export const Expertise = [
       "Delivering high-performance, scalable, and efficient web solutions.",
   },
 ];
+
+
 
 export const skills = [
   // Frontend Skills
