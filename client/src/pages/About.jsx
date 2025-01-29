@@ -239,7 +239,7 @@ const About = () => {
                 },
                 {
                   degree: "Class 12th",
-                  institution: "BPMG Public School.",
+                  institution: "BPMG Public School",
                   year: "2021 - 2022",
                   type: "Higher Secondary",
                   color: "bg-green-500",
@@ -247,7 +247,7 @@ const About = () => {
                 },
                 {
                   degree: "Class 10th",
-                  institution: "Sterling group of School.",
+                  institution: "Sterling Group of School",
                   year: "2019 - 2020",
                   type: "Secondary",
                   color: "bg-purple-500",

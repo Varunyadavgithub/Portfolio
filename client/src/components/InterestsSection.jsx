@@ -32,6 +32,13 @@ const InterestCard = ({ icon, title, description, color }) => {
 const InterestsSection = () => {
   const Interests = [
     {
+      icon: <FaDatabase />,
+      title: "Data Structures & Algorithms",
+      description:
+        "Solving complex computational problems with efficient algorithmic approaches.",
+      color: "bg-purple-500",
+    },
+    {
       icon: <FaCode />,
       title: "Full Stack Development",
       description:
@@ -51,13 +58,6 @@ const InterestsSection = () => {
       description:
         "Exploring web application security, penetration testing, and ethical hacking methodologies.",
       color: "bg-red-500",
-    },
-    {
-      icon: <FaDatabase />,
-      title: "Data Structures & Algorithms",
-      description:
-        "Solving complex computational problems with efficient algorithmic approaches.",
-      color: "bg-purple-500",
     },
     {
       icon: <FaRobot />,

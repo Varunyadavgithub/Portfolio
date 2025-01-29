@@ -4,9 +4,7 @@ import { motion } from "framer-motion";
 import HeroSection from "../components/HeroSection";
 import InterestsSection from "../components/InterestsSection";
 
-
 const Home = () => {
- 
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -16,7 +14,7 @@ const Home = () => {
     >
       <HeroSection />
 
-     <InterestsSection/>
+      <InterestsSection />
     </motion.div>
   );
 };
