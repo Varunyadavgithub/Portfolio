@@ -81,7 +81,7 @@ const Skills = () => {
                 ${skill.color} text-white text-3xl
               `}
               >
-                <skill.icon/>
+                <skill.icon />
               </div>
               <h3 className={`text-lg font-semibold mb-2 ${skill.textColor}`}>
                 {skill.name}

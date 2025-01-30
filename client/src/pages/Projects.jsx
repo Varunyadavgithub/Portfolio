@@ -27,7 +27,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50 py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-20"
+      className="min-h-screen bg-gray-50 py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-20"
     >
       <div className="container mx-auto max-w-6xl">
         {/* Page Header */}

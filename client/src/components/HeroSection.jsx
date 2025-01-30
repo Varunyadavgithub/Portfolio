@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ReactTyped } from "react-typed";
 import { assets } from "../assets/assets";
 import { Expertise } from "../assets/assets";
+import { FaProjectDiagram, FaEnvelope, FaDownload } from "react-icons/fa";
 
 const HeroSection = () => {
   const containerVariants = {
@@ -74,27 +75,41 @@ const HeroSection = () => {
                 typeSpeed={50}
                 backSpeed={50}
                 loop
+                style={{ color: "green" }}
               />
             </motion.p>
 
             <motion.div
-              className="flex justify-center md:justify-start space-x-4"
+              className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-2"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
             >
-              <Link
-                to="/projects"
-                className="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
-              >
-                View Projects
-              </Link>
-              <Link
-                to="/contact"
-                className="border border-blue-600 text-blue-600 px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-50 transition-colors text-sm sm:text-base"
-              >
-                Contact Me
-              </Link>
+              <div className="flex">
+                <Link
+                  to="/projects"
+                  className="flex items-center gap-2 bg-blue-600 text-white px-6 py-3 md:px-4 md:py-2 rounded-lg shadow-lg hover:bg-blue-700 transition-colors text-lg font-semibold text-center"
+                >
+                  <FaProjectDiagram size={20} /> View Projects
+                </Link>
+              </div>
+              <div className="flex">
+                <Link
+                  to="/contact"
+                  className="flex items-center gap-2 border border-blue-600 text-blue-600 px-6 py-3 md:px-4 md:py-2 rounded-lg shadow-lg hover:bg-blue-50 transition-colors text-lg font-semibold text-center"
+                >
+                  <FaEnvelope size={20} /> Contact Me
+                </Link>
+              </div>
+              <div className="flex">
+                <a
+                  href={assets.resume}
+                  download="Varun_Yadav_Resume.pdf"
+                  className="flex items-center gap-2 bg-green-600 text-white px-6 py-3 md:px-4 md:py-2 rounded-lg shadow-lg hover:bg-green-700 transition-colors text-lg font-semibold text-center cursor-pointer"
+                >
+                  <FaDownload size={20} /> Download Resume
+                </a>
+              </div>
             </motion.div>
           </motion.div>
 
