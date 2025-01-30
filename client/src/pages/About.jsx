@@ -6,6 +6,9 @@ import {
   FaMedal,
   FaLaptopCode,
   FaBriefcase,
+  FaTwitter,
+  FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 import { assets } from "../assets/assets";
 import { Link } from "react-router-dom";
@@ -38,23 +41,29 @@ const About = () => {
   const workExperience = [
     {
       company: "Taniya Webfix Pvt.Ltd",
+      logo: "https://taniyawebfix.com/wp-content/uploads/2024/09/logo.jpg",
       position: "Web Developer Intern",
-      duration: "August 2024 - January 2025",
+      duration: "Aug 2024 - Present",
+      location: "Vadodara, Gujarat, India · On-site",
       description: [
-        "Developed responsive web applications using React and Node.js",
-        "Implemented RESTful APIs and integrated with backend services",
-        "Collaborated with cross-functional teams to deliver high-quality software solutions",
+        "Developed responsive web interfaces using HTML, CSS, JavaScript, and React.js.",
+        "Transformed designs into functional web pages with Tailwind CSS and GSAP animations.",
+        "Optimized performance, fixed bugs, and ensured clean, maintainable code.",
+        "Collaborated with teams, participated in code reviews, and managed client expectations.",
       ],
-      technologies: ["React", "Node.js", "Express", "MongoDB"],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React.js",
+        "Tailwind CSS",
+        "GSAP",
+        "Git",
+        "GitHub",
+        "Responsive Web Design",
+      ],
     },
   ];
-
-  const personalInfo = {
-    name: "Varun Yadav",
-    location: "Vadodara, India",
-    email: "varunyadav@example.com",
-    phone: "+91 1234567890",
-  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -91,37 +100,83 @@ const About = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid md:grid-cols-2 gap-10 items-center mb-16"
+          className="flex flex-col md:flex-row items-center justify-between bg-white rounded-2xl shadow-xl overflow-hidden mb-16"
         >
-          <motion.div variants={itemVariants} className="flex justify-center">
-            <div className="p-1 bg-gradient-to-r from-blue-500 to-purple-600 rounded-md">
-              <img
-                src={assets.Profile}
-                alt="Varun Yadav"
-                className="w-full object-cover rounded-md shadow-lg"
-              />
-            </div>
+          <motion.div variants={itemVariants} className="md:w-1/2 relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 opacity-20"></div>
+            <img
+              src={assets.Profile}
+              alt="Professional Portrait"
+              className="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+            />
           </motion.div>
 
-          <motion.div variants={itemVariants}>
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">About Me</h1>
-            <p className="text-lg text-gray-600 mb-6">
-              I'm a passionate Full Stack Developer with a keen interest in
-              DevOps, cloud technologies, and web application security. My
-              journey is driven by a continuous desire to learn and solve
-              complex technological challenges.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-4">
-              {Object.entries(personalInfo).map(([key, value]) => (
-                <div key={key} className="bg-white p-4 rounded-lg shadow-md">
-                  <h3 className="font-semibold text-gray-700 capitalize">
-                    {key}
-                  </h3>
-                  <p className="text-gray-600">{value}</p>
-                </div>
-              ))}
+          <motion.div
+            variants={itemVariants}
+            className="md:w-1/2 p-8 md:p-12 space-y-6"
+          >
+            <div className="relative">
+              <h1 className="text-4xl font-bold text-gray-800 mb-4 relative">
+                About Me
+                <span className="absolute -bottom-2 left-0 w-16 h-1 bg-blue-500"></span>
+              </h1>
             </div>
+
+            <div className="space-y-4">
+              <p className="text-lg text-gray-600 leading-relaxed">
+                I'm a passionate Full Stack Developer with a keen interest in
+                DevOps, cloud technologies, and web application security. My
+                journey is driven by a continuous desire to learn and solve
+                complex technological challenges.
+              </p>
+
+              <div className="flex items-center space-x-4">
+                <div className="flex space-x-3">
+                  <motion.a
+                    href="https://github.com/varunyadavgithub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    className="text-gray-700 hover:text-black"
+                  >
+                    <FaGithub className="text-2xl" />
+                  </motion.a>
+                  <motion.a
+                    href="https://www.linkedin.com/in/varunyadavcse25/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    className="text-blue-600 hover:text-blue-800"
+                  >
+                    <FaLinkedin className="text-2xl" />
+                  </motion.a>
+
+                  <motion.a
+                    href="https://x.com/varun_yadav01"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    className="text-blue-400 hover:text-blue-600"
+                  >
+                    <FaTwitter className="text-2xl" />
+                  </motion.a>
+                </div>
+              </div>
+            </div>
+
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <Link
+                to="/projects"
+                className="inline-block bg-blue-500 text-white px-4 py-2 md:px-6 md:py-2 rounded-lg 
+        hover:bg-blue-600 transition-all duration-300 
+        text-base font-semibold shadow-md hover:shadow-lg"
+              >
+                View My Projects
+              </Link>
+            </motion.div>
           </motion.div>
         </motion.div>
 
@@ -176,9 +231,18 @@ const About = () => {
                 className="bg-white p-5 sm:p-6 rounded-lg shadow-md"
               >
                 <div className="flex flex-col sm:flex-row items-center mb-4">
-                  <div className="bg-blue-500 text-white rounded-full w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center sm:mr-4 mb-3 sm:mb-0">
-                    <FaBriefcase className="text-lg sm:text-2xl" />
-                  </div>
+                  {exp.logo ? (
+                    <img
+                      src={exp.logo}
+                      alt={`${exp.company} Logo`}
+                      className="w-16 sm:w-20 h-auto sm:mr-4 mb-3 sm:mb-0"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 bg-blue-500 text-white flex items-center justify-center rounded-full sm:mr-4 mb-3 sm:mb-0">
+                      <FaBriefcase className="text-lg sm:text-2xl" />
+                    </div>
+                  )}
+
                   <div className="text-center sm:text-left w-full">
                     <h3 className="text-base sm:text-xl font-semibold text-gray-800">
                       {exp.position}
@@ -307,7 +371,6 @@ const About = () => {
             </div>
           </div>
         </motion.div>
-
         {/* Call to Action */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
