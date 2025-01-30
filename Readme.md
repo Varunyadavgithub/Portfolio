@@ -18,7 +18,8 @@ Welcome to my **Full-Stack Developer Portfolio**! This project showcases my skil
 - **Deployment**: Vercel *(Frontend)*, Render *(Backend - upcoming)*  
 
 ## 📸 Screenshots  
-*(Add images showcasing your portfolio UI here!)*  
+![Screenshot 2025-01-30 123434](https://github.com/user-attachments/assets/874a861f-7700-4ca2-b65e-77ad3c61570b)
+
 
 ## 🚀 Installation & Setup  
 Clone the repository and install dependencies:  
