@@ -1,4 +1,7 @@
 import Profile from "./Profile.jpg";
+import LeetCode from "./LeetCode_logo.png";
+import Gfg from "./Gfg_logo.svg";
+import CodingNinjas from "./CodingNinjas_logo.svg";
 import { FaCode, FaLaptopCode, FaRocket } from "react-icons/fa";
 import {
   FaReact,
@@ -32,7 +35,7 @@ import {
 
 import { VscVscode } from "react-icons/vsc";
 
-export const assets = { Profile };
+export const assets = { Profile, LeetCode, Gfg, CodingNinjas };
 
 export const Expertise = [
   {
