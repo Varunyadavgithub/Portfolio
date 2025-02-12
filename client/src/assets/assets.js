@@ -1,4 +1,5 @@
 import Profile from "./Profile.jpg";
+import Resume from "./Varun_Yadav_Resume.pdf";
 import LeetCode from "./LeetCode_logo.png";
 import Gfg from "./Gfg_logo.svg";
 import CodingNinjas from "./CodingNinjas_logo.svg";
@@ -35,7 +36,7 @@ import {
 
 import { VscVscode } from "react-icons/vsc";
 
-export const assets = { Profile, LeetCode, Gfg, CodingNinjas };
+export const assets = { Profile,Resume, LeetCode, Gfg, CodingNinjas };
 
 export const Expertise = [
   {

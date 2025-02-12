@@ -103,7 +103,7 @@ const HeroSection = () => {
               </div>
               <div className="flex">
                 <a
-                  href={assets.resume}
+                  href={assets.Resume}
                   download="Varun_Yadav_Resume.pdf"
                   className="flex items-center gap-2 bg-green-600 text-white px-6 py-3 md:px-4 md:py-2 rounded-lg shadow-lg hover:bg-green-700 transition-colors text-lg font-semibold text-center cursor-pointer"
                 >
