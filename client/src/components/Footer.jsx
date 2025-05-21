@@ -10,6 +10,7 @@ import {
   FaGraduationCap,
   FaLightbulb,
 } from "react-icons/fa";
+import { SiTryhackme } from "react-icons/si";
 
 const Footer = () => {
   const socialLinks = [
@@ -30,6 +31,12 @@ const Footer = () => {
       url: "https://x.com/varun_yadav01",
       color: "text-blue-400 hover:text-blue-600",
       label: "Twitter Profile",
+    },
+    {
+      icon: <SiTryhackme />,
+      url: "https://tryhackme.com/p/th3c0d3hunt3r101",
+      color: "text-red-500 hover:text-red-400",
+      label: "TryHackMe Profile",
     },
   ];
 

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import {
   FaGraduationCap,
@@ -9,9 +8,11 @@ import {
   FaTwitter,
   FaGithub,
   FaLinkedin,
+  FaUserSecret,
 } from "react-icons/fa";
 import { assets } from "../assets/assets";
 import { Link } from "react-router-dom";
+import { SiTryhackme } from "react-icons/si";
 
 const About = () => {
   const experiences = [
@@ -40,10 +41,10 @@ const About = () => {
 
   const workExperience = [
     {
-      company: "Taniya Webfix Pvt.Ltd",
+      company: "Taniya Webfix Pvt Ltd",
       logo: "https://taniyawebfix.com/wp-content/uploads/2024/09/logo.jpg",
       position: "Web Developer Intern",
-      duration: "Aug 2024 - Present",
+      duration: "Aug 2024 - Mar 2025",
       location: "Vadodara, Gujarat, India · On-site",
       description: [
         "Developed responsive web interfaces using HTML, CSS, JavaScript, and React.js.",
@@ -61,6 +62,32 @@ const About = () => {
         "Git",
         "GitHub",
         "Responsive Web Design",
+      ],
+    },
+    {
+      company: "Western Refrigeration Pvt Ltd",
+      logo: "https://westernequipments.com/wp-content/uploads/2025/01/western-head-logo-2025.png",
+      position:
+        "Software Developer Trainee – MES (Manufacturing Execution System)",
+      duration: "May 2025 - Present",
+      location: "Valsad, Gujarat, India · On-site",
+      description: [
+        "Designing and building a modern MES web application using React.js and Tailwind CSS to replace legacy desktop tools.",
+        "Working with SQL databases for data storage, queries, and integration with the MES backend.",
+        "Maintaining and updating existing MES applications to ensure reliable performance across production lines.",
+        "Collaborating with engineers and stakeholders to understand requirements and implement process improvements.",
+        "Ensuring smooth data flow between manufacturing operations and centralized systems.",
+      ],
+      technologies: [
+        "React.js",
+        "Tailwind CSS",
+        "SQL",
+        "Node.js",
+        "Express.js",
+        "Git",
+        "GitHub",
+        "MES Systems",
+        "Full Stack Development",
       ],
     },
   ];
@@ -150,7 +177,6 @@ const About = () => {
                   >
                     <FaLinkedin className="text-2xl" />
                   </motion.a>
-
                   <motion.a
                     href="https://x.com/varun_yadav01"
                     target="_blank"
@@ -159,6 +185,15 @@ const About = () => {
                     className="text-blue-400 hover:text-blue-600"
                   >
                     <FaTwitter className="text-2xl" />
+                  </motion.a>
+                  <motion.a
+                    href="https://tryhackme.com/p/th3c0d3hunt3r101"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1 }}
+                    className="text-red-500 hover:text-red-400 transition-colors"
+                  >
+                    <SiTryhackme className="text-2xl" />
                   </motion.a>
                 </div>
               </div>
@@ -250,6 +285,8 @@ const About = () => {
                     <p className="text-sm sm:text-base text-gray-600">
                       {exp.company} | {exp.duration}
                     </p>
+                    <p className="text-sm text-gray-500 mt-1">{exp.location}</p>{" "}
+                    {/* added line */}
                   </div>
                 </div>
 
