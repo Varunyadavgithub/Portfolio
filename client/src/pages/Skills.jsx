@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { skills } from "../assets/assets";
 
@@ -86,15 +86,6 @@ const Skills = () => {
               <h3 className={`text-lg font-semibold mb-2 ${skill.textColor}`}>
                 {skill.name}
               </h3>
-              <div className="w-full bg-gray-200 rounded-full h-2.5">
-                <div
-                  className={`${skill.color} h-2.5 rounded-full`}
-                  style={{ width: `${skill.proficiency}%` }}
-                ></div>
-              </div>
-              <p className="text-sm text-gray-600 mt-2">
-                {skill.proficiency}% Proficiency
-              </p>
             </motion.div>
           ))}
         </div>

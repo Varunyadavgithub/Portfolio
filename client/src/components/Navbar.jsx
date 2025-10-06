@@ -61,7 +61,7 @@ const Navbar = () => {
                 transition={{ duration: 0.5 }}
                 className="text-3xl font-bold text-gray-800 tracking-wider"
               >
-                Varun Yadav
+                thecyberdev
               </motion.div>
             </Link>
           </div>
